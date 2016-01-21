@@ -13,12 +13,13 @@ function initializePage() {
 		$(".jumbotron h1").text("Experience Chan!");
 		$("#testjs").text("Please wait...");
 		$(".jumbotron p").toggleClass("active");
+		$("#submitBtn").click(changeDetails());
 	});
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
-	//
-	$("#submitBtn").click(changeDetails());
+	$("a.thumbnail").click(projectClick);
+	
 }
 
 function changeDetails(e){
